@@ -1,0 +1,84 @@
+
+.navbar-brand {
+  margin-left: 15px;
+  padding: 8px 16px;
+}
+
+.navbar-brand span {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 6px;
+  font-weight: 600;
+  border-bottom: 4px solid #cc0000;
+  /*box-shadow: inset 0 -6px 0 #FF6F6F;*/
+}
+
+.name {
+  font-size: 20px;
+  color: #595959;
+}
+.container {
+  max-width: 75%;
+}
+
+.line-height {
+  line-height: 1.8;
+}
+
+.highlighter {
+ background-color: #FFDC00;
+}
+
+p {
+  /*font-family: 'Poppins', sans-serif;*/
+  color: #595959;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 16px;
+}
+
+li {
+  color: #595959;
+  font-size: 14px;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.typing {
+  background-color:white;
+  text-align: left;
+  color:black; 
+}
+.typing-color {
+  color: #cc0000
+}
+
+a {color: #cc0000; text-decoration: none;}
+
+.carousel-item {
+  margin-top: 50px;
+}
+
+/*@keyframes animatedBackground {
+	from { background-position: 100% 0; }
+	to { background-position: 0 0; }
+}*/
+
+@keyframes animatedBackground {
+  from { background-position: 90% 0%; }
+	to { background-position: 0% 90%; }
+}
+
+.animated-worm { 
+  width: 100%; 
+  height: 90px;
+  background-image: url(img/assets/tiny.png);
+  background-position: 0px 0px;
+  background-repeat: repeat-y;
+  animation: animatedBackground 5s linear infinite ease-in-out;
+  -ms-animation: animatedBackground 5s linear infinite;
+  -moz-animation: animatedBackground 5s linear infinite;
+  -webkit-animation: animatedBackground 5s linear infinite;
+}
