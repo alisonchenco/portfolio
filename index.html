@@ -1,199 +1,330 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144656420-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-144656420-1');
-        </script>
+<head>
+  <meta charset="utf-8">
+  <title>Alison Chen</title>
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="apple.ico" type="image/gif" sizes="15x11">
-        
-        <link rel="stylesheet" href="animated.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="typing.js"></script>
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="img/blue-logo.png" type="image/gif" sizes="15x15">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+  <link rel="stylesheet" href="plugins/counto/animate.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="plugins/animated-text/animated-text.css">
+  <script>
+	  var colorWell;
+	  var defaultColor = "#1425ca";
+      window.addEventListener("load", startup, false);
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap" rel="stylesheet">
+		function openForm() {
+		  document.getElementById("loginPopup").style.display="block";
+		}
+		
+		function closeForm() {
+		  document.getElementById("loginPopup").style.display= "none";
+		}
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  var modal = document.getElementById('loginPopup');
+		  if (event.target == modal) {
+			closeForm();
+		  }
+		}
+		
+</script>
 
-        <title>Alison Chen</title>
-        <meta name="title" content="Alison Chen's Portfolio">
-        <meta property="og:image" content="meta.png">
-        <meta name="description" content="Hello, check out my work!">
-    </head>
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
 
-    <!--Nav bar-->
-    <div class="container w-75">
-        <nav class="navbar fixed-top justify-content-end navbar-expand-sm navbar-light bg-white">
-            <a class="navbar-brand" href="index.html">
-                <img src="apple.ico" width="35" height="38" class="d-inline-block"><span>Alison Chen</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="#navItems" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navItems">
-                <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link active right" href="index.html">Work<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="resume.html">Resume</a>
-                <a class="nav-item nav-link" href="about.html">About</a>
-                </div>
-            </div>
-        </nav>
-    </div>
+  <script>
+	   $(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+      return false;
+    });
+  });
+  </script>
 
-    <!--Name + Typing Animation-->
-    <div class="container jumbotron jumbotron-fluid w-75" style="background:transparent !important;">
-        <div class="container animated fadeInDown">
-            <br>
-            <div class="typing">
-                <br>
-                <br>
-                <h1><b>Alison Chen</b><span class="name"></span></h1>
-                <br>
-                <h1><b>is a
-                  <h1="" class="typewrite typing-color" data-period="2000" data-type='[ "Product Designer", "UI/UX Designer", "Web Developer" ]'>
-                    <span class="wrap"></span>
-                  </h1>
-                </b></h1>
-            </div>
-            <br>
-            <!--<p class="mb-0" style="color:#929597;">Focusing on empathetic & human-centered design!</p>-->
-            <p class="mb-0">Currently a junior studying design and interaction at <a href="https://ucsd.edu" target="_blank" class="text-danger"><u>UC San Diego</u></a></p>
-            <p class="mb-0">Previously a UX Design Intern at <a href="https://www.bd.com/en-us" target="_blank" class="text-danger"><u>BD</u></a></p>
-        </div>
-    </div>
+</head>
 
 <body>
-    <div class="container w-75 animated fadeInUp"> 
-       <!--row 1-->
-        <div class="row">
+  
+<!-- Navigation Start -->
+<!-- Header Start --> 
 
-            <div class="col-sm-6 hvr-grow">
-                <a href="bd.html" class="card-img text-center text-dark">
-                    <div class="card border-white mb-3">
-                    <img src="block/bd.png" class="card-img border" alt="...">
-                    <div class="card-body">
-                        <h6 class="card-title text-dark">BD - UXD Intern</h6>
-                        <p style="color:#cc0000">Summer 2019 Internship</p>
-                    </div>
-                    </div>
-                </a>
-            </div>
+<nav class="navbar navbar-expand-lg  main-nav " id="navbar">
+	<div class="container">
+	  <!--<a class="navbar-brand" href="index.html">
+		<img src="img/Ac.png" class="img-fluid d-inline-block" style="height: 40px; vertical-align: middle;"><span style="font-weight: 1000; vertical-align: middle; font-size: 1.5rem;"> </span>
+	  </a>-->
 
-            <div class="col-sm-6 hvr-grow">
-                <a href="facebook.html" class="card-img text-center text-dark">
-                    <div class="card border-white mb-3">
-                    <img src="block/facebook.png" class="card-img" alt="...">
-                    <div class="card-body">
-                        <h6 class="card-title text-dark">Facebook Save Redesign</h6>
-                        <p style="color:#cc0000">UX Case Study</p>
-                    </div>
-                    </div>
-                </a>
-            </div>
+	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="ti-align-justify"></span>
+	  </button>
+  
+		  <div class="collapse navbar-collapse" id="navbarsExample09">
+			<ul class="navbar-nav ml-auto">			 
+			  	<li class="nav-item active"><a class="nav-link" href="index.html">Work</a></li>
+				<li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
 
-        </div>
-
-        <!--row 2-->
-        <div class="row">
-
-            <div class="col-sm-6 hvr-grow">
-                <a href="ucsd.html" class="card-img text-center text-dark">
-                    <div class="card border-white mb-3">
-                    <img src="block/ucsd.png" class="card-img" alt="...">
-                    <div class="card-body">
-                        <h6 class="card-title text-dark">UCSD APP Redesign</h6>
-                        <p style="color:#cc0000">UI / UX</p>
-                    </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-sm-6 hvr-grow">
-                <a href="designco.html" class="card-img text-center text-dark">
-                    <div class="card border-white mb-3">
-                    <img src="block/design.png" class="card-img border" alt="...">
-                    <div class="card-body">
-                        <h6 class="card-title text-dark">Design Co</h6>
-                        <p style="color:#cc0000">Leadership</p>
-                    </div>
-                    </div>
-                </a>
-            </div>
+<!-- Header Close --> 
 
 
 
-        </div>
+<!-- Navigation ENd -->
 
-        <!--row 3-->
-        <div class="row">
+<!-- Banner Start -->
+<section class="section-sm banner" input type="color" value="#1425ca" id="colorWell">
+	<div class="container">
+		<br>
+		<div class="row">
+			<div class="col-sm-12">
+				 <h1 class="cd-headline clip is-full-width mb-4">
+				 	Alison Chen
+                    is a <span class="cd-words-wrapper text-color">
+                        <b class="is-visible">Product Designer. </b>
+                        <b>UI/UX Designer.</b>
+                        <b>Web Developer.</b>
+                    </span>
+				</h1>
+				<br>
+                <h2 style="font-size: 22px;"> <br> 
+				  🎓 Junior studying Design & Interaction <a href="https://ucsd.edu" class="color-danger" target="_blank">@UCSD</a> <br>
+				  📱 Interaction Design Intern <a href="https://www.bd.com/en-us" class="color-danger" target="_blank">@BD</a><br>
+				  🤝 Industry Relations Coordinator <a href="http://www.ucsddesign.co/" target="_blank">@Design Co</a></h2>
+				  <br>
+				  <br>
+				  <br>
+				  <br>
+				  <br>
+				  <br>
+				  <a href="#ok" class="scroll-down" address="true"></a>
+			
+			</div>
+		</div>
+	</div>
+</section>
 
-                <div class="col-sm-6 hvr-grow">
-                    <a href="tasa.html" class="card-img text-center text-dark">
-                        <div class="card border-white mb-3">
-                        <img src="block/tasa.png" class="card-img border" alt="...">
-                        <div class="card-body">
-                            <h6 class="card-title text-dark">UCSD TASA</h6>
-                            <p style="color:#cc0000">Brand Design/ Visual Design</p>
-                        </div>
-                        </div>
-                    </a>
-                </div>
+<!-- Banner End -->
 
-                <div class="col-sm-6 hvr-grow">
-                        <a href="ibm.html" class="card-img text-center text-dark">
-                            <div class="card border-white mb-3">
-                            <img src="block/ibm.png" class="card-img" alt="...">
-                            <div class="card-body">
-                                <h6 class="card-title text-dark">Design for Parkinson's</h6>
-                                <p style="color:#cc0000">UI / UX</p>
-                            </div>
-                            </div>
-                        </a>
-                    </div>
-                
-        </div>
-    </div>
-</body>
+<!-- Portfolio start -->
+<section class="portfolio ok">
+	<div class="container">
 
-<br>
-<br>
-<br>
 
-<!-- Footer -->
 
-<footer class="page-footer font-small darken-3" style="background-color:black;">
-        <div class="container animated fadeInUp">
-            <div class="row">
-            <div class="col-md-12 py-5 flex-center">
-                <div class="mb-5 flex-center text-center" style="color:white;">
-                    
-                    <a href="https://www.linkedin.com/in/ealisonchen/" style="color:white;" target="_blank">
-                        <i class="fab fa-linkedin fa-lg white-text mr-3 fa-2x"></i>
-                    </a>
-                    <a href="mailto: enyu.alison.chen@gmail.com" style="color:white;" target="_blank">
-                        <i class="fas fa-envelope fa-lg white-text mr-3 fa-2x"></i>
-                    </a>
-                    <a href="https://instagram.com/eatnzzz" style="color:white;" target="_blank">
-                        <i class="fab fa-instagram fa-lg white-text mr-3 fa-2x"></i>
-                    </a>
-                </div>
-            <div class="footer-copyright text-center py-1" style="color:white;">Designed & Coded by 🍎Alison Chen</div>
-            <div class="footer-copyright text-center py-1" style="color:white;">Copyright © 2019</div>
-            </div>
-        </div>
-        </div>
-</footer>
+			<div class="row shuffle-wrapper portfolio-gallery" id="ok">
+				<div class="col-lg-4 col-6 mb-4 shuffle-item">
+						<h1 style="font-size: 80px; color:#E07239;">01</h1>
+						<h3 class="mb-4" style="color:#E07239;">UX Design Internship</h3>
+						<h4 class="mb-4" style="color:#E07239;">BD (Becton Dickinson) <br>
+						Summer 2019</h4>
+						
+					</div>
+				<div class="col-lg-8 col-6 mb-4 shuffle-item">
+					<a href="bd.html">
+						<div class="image-overlay position-relative">
+						<img src="img/portfolio/bd.png" alt="portfolio-image" class="img-fluid w-100 d-block border rounded">
+							<div class="overlay" style="background-color: #E07239;">
+								<div class="overlay-text">              
+									<h4 class="mb-0 big" style="color: white">UX Internship Reflection</h4>
+									<h5 class="mb-0 text-white small">Summer 2019</h5>              
+								</div>
+							</div> 				
+						</div>
+					</a>
+				</div>
+				
+				
+			</div>
+			
+			<br>
+
+			<div class="row shuffle-wrapper portfolio-gallery">
+				<div class="col-lg-4 col-6 mb-4 shuffle-item">
+						<h1 style="font-size: 80px;">02</h1>
+						<h3 class="mb-4">Building the Largest Design Community at UCSD</h3>
+						<h4>Design Co</h4>
+				</div>
+				<div class="col-lg-8 col-6 mb-4 shuffle-item">
+					<a href="designco.html">
+							<div class="image-overlay position-relative">
+							<img src="img/portfolio/design.png" alt="portfolio-image" class="img-fluid w-100 d-block border rounded">
+								<div class="overlay" style="background-color: black;">
+									<div class="overlay-text">              
+										<h4 class="mb-0 big" style="color: white">Design Co</h4>
+										<h5 class="mb-0 text-white small">Leading Design Workshops</h5>       
+									</div>
+								</div> 				
+							</div>
+					</a>
+				</div>		
+				
+
+			</div>
+
+			<br>
+
+			<div class="row shuffle-wrapper portfolio-gallery">
+					<div class="col-lg-4 col-6 mb-4 shuffle-item">
+							<h1 style="font-size: 80px; color:#3b5998;">03</h1>
+							<h3 class="mb-4" style="color:#3b5998;">UI/UX Case Study</h3>
+							<h4 class="mb-4" style="color:#3b5998;">Facebook Saved Redesign</h4>
+						</div>
+					<div class="col-lg-8 col-6 mb-4 shuffle-item">
+						<a href="">
+								<div class="image-overlay position-relative">
+								<img src="img/portfolio/facebook.png" alt="portfolio-image" class="img-fluid w-100 d-block rounded">
+									<div class="overlay" style="background-color: #3b5998;">
+										<div class="overlay-text">              
+											<h4 class="mb-0 big" style="color: white">Currently under construction 🚧</h4>
+											<h5 class="mb-0 text-white small">Please come back soon!</h5>              
+										</div>
+									</div> 				
+								</div>
+						</a>
+					</div>		
+					
+			</div>
+
+			<br>
+
+			<div class="row shuffle-wrapper portfolio-gallery">
+					<div class="col-lg-4 col-6 mb-4 shuffle-item">
+							<h1 style="font-size: 80px; color:#F7CF47;">04</h1>
+							<h3 class="mb-4" style="color:#F7CF47;">UI/UX Case Study</h3>
+							<h4 class="mb-4" style="color:#F7CF47;">UCSD Dining App</h4>
+					</div>
+					<div class="col-lg-8 col-6 mb-4 shuffle-item">
+						<a href="ucsd.html">
+							<div class="image-overlay position-relative">
+							<img src="img/portfolio/ucsd.png" alt="portfolio-image" class="img-fluid w-100 d-block rounded">
+								<div class="overlay" style="background-color: #F7CF47;">
+									<div class="overlay-text">              
+										<h4 class="mb-0 big" style="color: white">UCSD Dining Redesign</h4>
+										<h5 class="mb-0 text-white small">UI/UX Design</h5>              
+									</div>
+								</div> 				
+							</div>
+						</a>
+					</div>		
+
+			</div>
+
+			<br>
+
+			<div class="row shuffle-wrapper portfolio-gallery">
+					<div class="col-lg-4 col-6 mb-4 shuffle-item">
+							<h1 style="font-size: 80px; color:#38d39f;">05</h1>
+							<h3 class="mb-4" style="color:#38d39f;">UI/UX Design</h3>
+							<h4 class="mb-4" style="color:#38d39f;">Design for Parkinson's</h4>
+					</div>	
+					<div class="col-lg-8 col-6 mb-4 shuffle-item">
+						<a href="parkinsons.html">
+								<div class="image-overlay position-relative">
+								<img src="img/portfolio/ibm.png" alt="portfolio-image" class="img-fluid w-100 d-block rounded">
+									<div class="overlay" style="background-color: #38d39f;">
+										<div class="overlay-text">              
+											<h4 class="mb-0 big" style="color: white">Design for Parkinson's</h4>
+											<h5 class="mb-0 text-white small">UI/UX Design</h5>              
+										</div>
+									</div> 				
+								</div>
+							</a>
+					</div>	
+					
+			</div>
+
+			<br>
+
+			
+
+			<div class="row shuffle-wrapper portfolio-gallery">
+					<div class="col-lg-4 col-6 mb-4 shuffle-item">
+							<h1 style="font-size: 80px; color:#138faf;">06</h1>
+							<h3 class="mb-4" style="color:#138faf;">Visual + Brand Design</h3>
+							<h4 class="mb-4" style="color:#138faf;">UCSD TASA</h4>
+					</div>	
+					<div class="col-lg-8 col-6 mb-4 shuffle-item">
+						<a href="tasa.html">
+								<div class="image-overlay position-relative">
+								<img src="img/portfolio/tasa.png" alt="portfolio-image" class="img-fluid w-100 d-block border rounded">
+									<div class="overlay" style="background-color: #138faf;">
+										<div class="overlay-text">              
+											<h4 class="mb-0 big" style="color: white">UCSD TASA</h4>
+											<h5 class="mb-0 text-white small">Visual + Brand Design</h5>              
+										</div>
+									</div> 				
+								</div>
+							</a>
+					</div>	
+					
+			</div>
+			
+
+
+
+	    </div>
+	</div>
+
+
+</section>
+
+<!-- Portfolio End -->
+
+<!-- Footer start -->
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<h5 class="mb-0 footer-text">Designed & Coded by Alison Chen 👩🏻‍💻</h5>
+			</div>
+			<div class="col-lg-6">
+				<div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
+					<ul class="list-inline mb-0">
+						<li class="list-inline-item"><a href="mailto: enyu.alison.chen@gmail.com" target="_blank"><i class="ti-email mr-3"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/ealisonchen/" target="_blank"><i class="ti-linkedin mr-3"></i></a>
+						</li>
+						<li class="list-inline-item"><a href="https://github.com/enyuchen/" target="_blank"><i class="ti-github mr-3"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Footer End -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="plugins/animated-text/animated-text.js"></script>
+<script src="plugins/counto/apear.js"></script>
+<script src="plugins/counto/counTo.js"></script>
+
+ <!-- Google Map -->
+<script src="plugins/google-map/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script> 
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</html>

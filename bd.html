@@ -1,364 +1,410 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144656420-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-144656420-1');
-    </script>
+<!DOCTYPE html>
+<html lang="zxx">
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="apple.ico" type="image/gif" sizes="15x11">
-    <link rel="stylesheet" href="animated.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="typing.js"></script>
-    <script src="gallery.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Alison Chen</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap" rel="stylesheet">
-
-    <title>Alison Chen</title>
-    <meta name="title" content="Alison Chen's Portfolio">
-    <meta property="og:image" content="meta.png">
-    <meta name="description" content="Hello, check out my work!">
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="img/dot2.png" type="image/gif" sizes="15x15">
   
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script> 
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+  <link rel="stylesheet" href="plugins/counto/animate.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="plugins/animated-text/animated-text.css">
 
-    <script type = "text/javascript">
-    $(document).ready(function(){
-      //Take your div into one js variable
-      var div = $("#divToShowHide");
-      //Take the current position (vertical position from top) of your div in the variable
-      var pos = div.position();
-      //Now when scroll event trigger do following
-      $(window).scroll(function () {
-      var windowpos = $(window).scrollTop();
-      //Now if you scroll more than 100 pixels vertically change the class to AfterScroll
-      // I am taking 100px scroll, you can take whatever you need
-      if (windowpos >= (pos.top - 100)) {
-        div.addClass("AfterScroll");
-      }
-      //If scroll is less than 100px, remove the class AfterScroll so that your content will be hidden again 
-      else {
-        s.removeClass("AfterScroll");
-      }
-      //Note: If you want the content should be shown always once you scroll and do not want to hide it again when go to top agian, no need to write the else part
-    });
-    });
-    </script>
-  </head>
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
   
-  <div class="container w-75">
-      <br>
-    <nav class="navbar fixed-top justify-content-end navbar-expand-sm navbar-light bg-white">
-      <a class="navbar-brand" href="index.html">
-        <img src="apple.ico" width="35" height="38" class="d-inline-block"><span>Alison Chen</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="#navItems" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navItems">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active right" href="index.html">Work<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="resume.html">Resume</a>
-          <a class="nav-item nav-link" href="about.html">About</a>
-        </div>
-      </div>
-    </nav>
-  </div>
+<!-- Header Start --> 
 
-  <div class="row">
-    <div class="col"></div>
-        <img src="cover/bd.png" style="width: 100%;">
-    </div>
-  </div>
+<nav class="navbar navbar-expand-lg  main-nav " id="navbar">
+		<div class="container">
+	
+		  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="ti-align-justify"></span>
+		  </button>
+	  
+			  <div class="collapse navbar-collapse" id="navbarsExample09">
+				<ul class="navbar-nav ml-auto">			 
+					  <li class="nav-item active"><a class="nav-link" href="index.html">Work</a></li>
+					<li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+				</ul>
+			</div>
+		</div>
+</nav>
 
-  <body>
-    <div class="container w-75">
-    <br>
-   
-    <!--Project Summary-->
-    <br>
-    <div class="row">
-      <h1>UX Design Internship</h1>
-    </div>
-    <br>
-    <br>
-    <br>
-    <!--Project Start-->
+<!-- Header Close-->
 
-    <div class="row">
-      <div class="col-sm-3">
-        <img class="img-fluid" src="work/bd/bd-logo.png" alt="">
-      </div>
-      <div class="col-sm-9">
-      <p>BD (Becton Dickinson) is a medical technology company that manufactures and sells medical devices, instrument systems, and reagents. BD also provides consulting and analytic services in certain geographies. Founded in 1897 and headquartered in Franklin Lakes, New Jersey, BD employs nearly 76,000 people in more than 50 countries throughout the world.</p>
-      <p>This summer, I had the opportunity to work as a UX Design intern at BD on the Technology Solution team (Main Project) and UX Design team (UXD Project).</p>
-      <p><b>Due to privacy agreements, I can't publicly share work in full detail. Please contact me to see or hear about more of my work.</b></p>
-      </div>
-    </div>
+<section class="section-sm">
+	<div class="container">
+		
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="my-4">
+						<img src="work/cover/bdcover.png" class="img-fluid w-100 border rounded">
+				</div>
+				<div class="project-info">
+					<br>
+					<h3 class="mb-4">UX Design Internship</h3>
+					<p>BD (Becton Dickinson) is a medical technology company that manufactures and sells medical devices, instrument systems, and reagents. BD also provides consulting and analytic services in certain geographies. Founded in 1897 and headquartered in Franklin Lakes, New Jersey, BD employs nearly 76,000 people in more than 50 countries throughout the world.</p>
+					<p>This summer, I had the opportunity to work as a UX Design intern at BD on the Technology Solution team (Main Project) and UX Design team (UXD Project).</p>
+					<p><b>Due to privacy agreements, I can't publicly share work in full detail. Please contact me to see or hear about more of my work.</b></p>
+				</div>
 
-    <br>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="info">
+							<h5 class="mb-0">Role 👩🏻‍💻</h5>
+							<p>UX Design Intern</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+							<div class="info">
+								<h5 class="mb-0">Time ⏳</h5>
+								<p>Summer 2019 (June - Sept)</p>
+							</div>
+						</div>
+				</div>
 
-    <div class="row">
-      <div class="col-sm-12">
-      <h3>01. Main Project: RSS Proactive Feature</h3>
-      <h4 style="color:#F07822;">UX Design + Interaction Design</h4>
-      <p>For the Technology Solution team, my primary role was user experience and interaction design. With other interns (5 engineers and 1 PM), we designed and developed an application that helps hundreds of engineers to better troubleshoot medical devices in a cloud based platform.
-      </p>
-      </div>
-    </div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="info">
+							<h5 class="mb-0">Impact 💯</h5>
+							<ul>
+								<li>Presented to the president of medical management solutions and other stakeholders which led to approval of the web app getting pushed.</li>
+								<li>Decreased customer support submissions.</li>
+								<li>Decreased time spent on per customer support ticket.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-    <div class="row">
-      <div class="col-sm-3">
-        <h5>Background</h5>
-      </div>
-      <div class="col-sm-9">
-        <p>BD Remote Support Service (RSS) is the BD enterprise-class solution offering remote management and support of BD products deployed at healthcare organization. Using industry-standard secure technologies, the team of BD RSS technicians ensures customers receive quick and proactive support. It serves more than 140,000 BD products around the world with 24/7 support.</p>
-      </div>
-    </div>
+			</div>
+		</div>
+	</div>
+</section>
 
-    <div class="row">
-        <div class="col-sm-3">
-          <h5>Design Goal</h5>
-        </div>
-        <div class="col-sm-9">
-          <figure class="figure">
-              <img src="work/bd/designgoal.png" class="figure-img img-fluid rounded">
-          </figure>
-        </div>
-    </div>
-      
-    <div class="row">
-        <div class="col-sm-3">
-          <h5>Process</h5>
-        </div>
-        <div class="col-sm-9">
+<section class="container">
+	<div class="row justify-content-center">
+		<div class="col-lg-8">
 
-        <p>During the design and development process, our team was introduced with the Agile Scrum development framework. Agile Scrum is a software development method that helps team work efficiently; it encourages teams learn through experiences, self organize while working on problems, and reflect on the outcomes to continuously improve. I found the Agile Scrum framework helpful, which helped me to track the process of the development team.</p>
-        
-          <div class="row">
-            <div class="col-sm-3">
-              <h5>Research 🔍</h5>
-            </div>
-            <div class="col-sm-9">
-                <p>During the research stage, I learned who the users are, the needs, and the current softwares technical context. I learned in depth about the Pyxis Medication Device, and how BD resolves customer issues through their Technical Service Center. I learned about the different software platforms engineers use to resolve the issues, and how they solve the problems before the customers are inconvenienced. I also created user flow of the engineers. Later, I highlighted areas that are representing the engineer’s pain points which I tackled in my design solutions.
-                    <figure class="figure">
-                        <img src="work/bd/1.png" class="figure-img img-fluid rounded">
-                        <figcaption class="figure-caption">User Flow (Picture blurred for confidentiality)</figcaption>
-                    </figure>
-                </p>
-            </div>
-          </div>
+			<div class="row">
+			<div class="col-sm-12 ">
+			<h3>01. Main Project — RSS Proactive Feature</h3>
+			<h4 style="color:#F07822;">UX Design + Interaction Design</h4>
+			<p>For the Technology Solution team, my primary role was user experience and interaction design. With other interns (5 engineers and 1 PM), we designed and developed an application that helps hundreds of engineers to better troubleshoot medical devices in a cloud based platform.
+			</p>
+			</div>
+			</div>
+		
+			<div class="row">
+			<div class="col-sm-3">
+				<h5>Background</h5>
+			</div>
+			<div class="col-sm-9">
+				<p>BD Remote Support Service (RSS) is the BD enterprise-class solution offering remote management and support of BD products deployed at healthcare organization. Using industry-standard secure technologies, the team of BD RSS technicians ensures customers receive quick and proactive support. It serves more than 140,000 BD products around the world with 24/7 support.</p>
+			</div>
+			</div>
+		
+			<div class="row">
+				<div class="col-sm-3">
+				<h5>Design Goal</h5>
+				</div>
+				<div class="col-sm-9">
+				<figure class="figure">
+					<img src="work/bd/designgoal.png" class="figure-img img-fluid rounded">
+				</figure>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-3">
+				<h5>Process</h5>
+				</div>
+				<div class="col-sm-9">
+		
+				<p>During the design and development process, our team was introduced with the Agile Scrum development framework. Agile Scrum is a software development method that helps team work efficiently; it encourages teams learn through experiences, self organize while working on problems, and reflect on the outcomes to continuously improve. I found the Agile Scrum framework helpful, which helped me to track the process of the development team.</p>
+				</div>
+			</div>
+				
+				<div class="row">
+					<div class="col-sm-3">
+					<h5>Research 🔍</h5>
+					</div>
+					<div class="col-sm-9">
+						<p>During the research stage, I learned who the users are, the needs, and the current softwares technical context. I learned in depth about the Pyxis Medication Device, and how BD resolves customer issues through their Technical Service Center. I learned about the different software platforms engineers use to resolve the issues, and how they solve the problems before the customers are inconvenienced. I also created user flow of the engineers. Later, I highlighted areas that are representing the engineer’s pain points which I tackled in my design solutions.
+							<figure class="figure">
+								<img src="work/bd/1.png" class="figure-img img-fluid rounded">
+								<figcaption class="figure-caption">User Flow (Picture blurred for confidentiality)</figcaption>
+							</figure>
+						</p>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="col-sm-3">
+					<h5>Design 🖋</h5>
+					</div>
+					<div class="col-sm-9">
+					<p>I took all the information to brainstorm and then developed several solutions. Later, I went around for a quick feedback on the ideas, combined several good ideas, and started drafting the solution.
+					<br>
+					</p>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="col-sm-3">
+						<h5>Prototype 🖥</h5>
+					</div>
+					<div class="col-sm-9">
+					<ul>
+						<li>First, I created low-fidelity wireframes.</li>
+						<li>Then, I worked on mid-fidelity prototypes using Figma.</li>
+						<li>Lastly, I applied the BD Unified Software Standards on the high-fidelity prototypes.</li>
+					</ul>
+					<figure class="figure">
+						<img src="work/bd/2.png" class="figure-img img-fluid rounded">
+						<figcaption class="figure-caption">Prototypes (Picture blurred for confidentiality)</figcaption>
+					</figure>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3">
+					<h5>User Testing 💬</h5>
+					</div>
+					<div class="col-sm-9">
+					<p>Since our users (support engineers) are around the globe, I conducted the user testing via Skype meeting calls with screen sharing. During the user interviews, with 6 technical support engineers, I was able to talk to 6 technical support engineer and learn about their workflow, details of different platforms they are using. Talking directly to the users allowed me to understand the platforms that I never understood, and details that I would have overlooked. The user testing was powerful in the design process, allowed me to clarify the user pain points, design preferences, and validate my prototypes.
+						<figure class="figure">
+							<img src="work/bd/3.png" class="figure-img img-fluid rounded">
+							<figcaption class="figure-caption">User testing in different cities</figcaption>
+						</figure>
+					</p>
+					</div>
+				</div>
+			
+			<div class="row">
+				<div class="col-sm-3">
+					<h5>Iterations ♾</h5>
+				</div>
+				<div class="col-sm-9">
+					<p>Following the user interviews, I made iterations on the prototype, and conducted second and third rounds of user testing with 5 technical support engineers. Making adjustments based on the iterations was essential.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-3">
+				<h5>Final Design</h5>
+				</div>
+				<div class="col-sm-9">
+				<p>During the three months, I focused on designing the user experience of the web application. I researched on the troubleshooting process, designed user flows, created mid/high fidelity prototypes, conducted user testing, iterated, and assisted in HTML/CSS with front-end engineer on build the web application.</p>
+		
+				<p>By the end of the internship, our team was able to push the web application (It’s live!). The most rewarding part was the user’s reactions when I showed him/her our final product. “Oh my god, I love this! When can I get to use it?” one user said. These moments remind me how meaningful ux design is, and how UX really impacts users.</p>
+		
+				<p>On the last day, we gave a final presentation to the president of medical management solutions, stakeholders, and leaders/managers from BD.
+				<br>
+				<figure class="figure">
+					<img src="work/bd/4.png" class="figure-img img-fluid rounded">
+					<figcaption class="figure-caption">Final Presentation</figcaption>
+				</figure>
+				<br>
+				</p>
+				</div>
+			</div>
 
-          <div class="row">
-            <div class="col-sm-3">
-              <h5>Design 🖋</h5>
-            </div>
-            <div class="col-sm-9">
-              <p>I took all the information to brainstorm and then developed several solutions. Later, I went around for a quick feedback on the ideas, combined several good ideas, and started drafting the solution.
-              <br>
-              </p>
-            </div>
-          </div>
+			<div class="row">
+					<div class="col-sm-3">
+						<h5>Impact 💯</h5>
+					</div>
+					<div class="col-sm-9">
+						<ul>
+								<li>Presented to the president of medical management solutions and other stakeholders which led to approval of the web app getting pushed.</li>
+								<li>Decreased customer support submissions.</li>
+								<li>Decreased time spent on per customer support ticket.</li>
+						</ul>
+					</div>
+				</div>
+		
+			<br>
+		
+			<div class="row">
+				<div class="col-sm-12">
+				<h3>02. UXD Project — Redesign Summary Dialog</h3>
+				<h4 style="color:#F07822;">UX Research</h4> 
+				<p>For the UXD Team, I am primarily working on UX Research with a Human Factor Engineer (Shout out to Marina!). Our goal was to improve the structure and readability of a summary page. <b>Since the work is still in progress, I will share it once it is completed.</b></p>
+				</div>
+			</div>
+		
+			<br>
+		
+			<div class="row">
+			<div class="col-sm-12">
+				<h3>03. Side Project — Designing a Team T-Shirt</h3>
+				<h4 style="color:#F07822;">Visual Design</h4> 
+				<p>One thing I learned during my internship is to be willing to help and constantly ask for more. Throughout the internship, I told my manager that I could assist in additional work if needed. One day, my manager came and asked me if I was interested in designing a T-Shirt for his team. The RSS (Remote Support Service) team had a new release of the software and new t-shirt for the team was needed.</p>
+				<p>I was thrilled at this opportunity and start sketching for ideas.</p>
+			</div>
+			</div>
+		
+			<div class="row">
+			<div class="col-sm-3">
+				<h5>Design Ideas/ Inspiration</h5>
+			</div>
+			<div class="col-sm-9">
+				<ul>
+				<li>Cloud: RSS is a cloud based service platform. </li>
+				<li>Team Names: The RSS group have several teams, all teams are named after Marvel characters.</li>
+				<li>Software Product: BD Assist, RSS Dashboard, Aria</li>
+				<li>Hardware Product: BD Pyxis Medstation, BD FACSCanto II, BD Max</li>
+				</ul>
+			</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-3">
+					<h5>Draft</h5>
+				</div>
+				<div class="col-sm-9">
+					<p>After exploring some designs, I decided on isometric design, since it is one of the latest design trends and it would work well with BD’s medical devices. Isometric design is the combination of flat design and 3D design, without converging perspective lines. I really like how the design is simple, yet gives you different perspectives on an object.
+					</p>
+					<figure class="figure mt-3">
+						<img src="work/bd/5.png" class="figure-img img-fluid rounded border">
+						<figcaption class="figure-caption">Drafts</figcaption>
+					</figure>
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="col-sm-3">
+				<h5>Final Design</h5>
+				</div>
+				<div class="col-sm-9">
+					<figure class="figure">
+						<img src="work/bd/6.png" class="figure-img img-fluid rounded border">
+						<figcaption class="figure-caption">Final Design for T-Shirt</figcaption>
+					</figure>
+				</div>
+			</div>
 
-          <div class="row">
-              <div class="col-sm-3">
-                <h5>Prototype 🖥</h5>
-              </div>
-              <div class="col-sm-9">
-              <ul>
-                <li>First, I created low-fidelity wireframes.</li>
-                <li>Then, I worked on mid-fidelity prototypes using Figma.</li>
-                <li>Lastly, I applied the BD Unified Software Standards on the high-fidelity prototypes.</li>
-              </ul>
-              <figure class="figure">
-                  <img src="work/bd/2.png" class="figure-img img-fluid rounded">
-                  <figcaption class="figure-caption">Prototypes (Picture blurred for confidentiality)</figcaption>
-              </figure>
-              </div>
-          </div>
-        
-        <div class="row">
-            <div class="col-sm-3">
-              <h5>User Testing 💬</h5>
-            </div>
-            <div class="col-sm-9">
-            <p>Since our users (support engineers) are around the globe, I conducted the user testing via Skype meeting calls with screen sharing. During the user interviews, with 6 technical support engineers, I was able to talk to 6 technical support engineer and learn about their workflow, details of different platforms they are using. Talking directly to the users allowed me to understand the platforms that I never understood, and details that I would have overlooked. The user testing was powerful in the design process, allowed me to clarify the user pain points, design preferences, and validate my prototypes.
-                <figure class="figure">
-                    <img src="work/bd/3.png" class="figure-img img-fluid rounded">
-                    <figcaption class="figure-caption">User testing in different cities</figcaption>
-                </figure>
-              </p>
-            </div>
-        </div>
-      
-      <div class="row">
-        <div class="col-sm-3">
-            <h5>Iterations ♾</h5>
-        </div>
-        <div class="col-sm-9">
-            <p>Following the user interviews, I made iterations on the prototype, and conducted second and third rounds of user testing with 5 technical support engineers. Making adjustments based on the iterations was essential.</p>
-        </div>
-      </div>
+			<div class="row">
+					<div class="col-lg-12">
+						<div class="info">
+							<h5 class="mb-0">Impact 💯</h5>
+							<ul>
+								<li>T-shirts were printed, distributed, and wore by the RSS team of 50.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-      </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-sm-3">
-          <h5>Final Design</h5>
-        </div>
-        <div class="col-sm-9">
-          <p>During the three months, I focused on designing the user experience of the web application. I researched on the troubleshooting process, designed user flows, created mid/high fidelity prototypes, conducted user testing, iterated, and assisted in HTML/CSS with front-end engineer on build the web application.</p>
+			<br>
+		
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>I love my team :)</h3>
+				<figure class="figure">
+					<img src="work/bd/presenting.jpg" class="figure-img img-fluid rounded">
+					<figcaption class="figure-caption">UXD Presentation</figcaption>
+				</figure>
+			</div>
+			<div class="col-sm-6">
+				<figure class="figure">
+					<img src="work/bd/team.jpg" class="figure-img img-fluid rounded">
+					<figcaption class="figure-caption">This is my team!</figcaption>
+				</figure>
+				<h3>My BIG Desk</h3>
+			</div>
+		</div>
+		<div class="row">
+				<div class="col-sm-12">
+					<figure class="figure">
+							<img src="work/bd/workspace.jpg" class="figure-img img-fluid rounded">
+							<figcaption class="figure-caption">My Workspace Setup</figcaption>
+					</figure>
+				</div>
+		</div>
 
-          <p>By the end of the internship, our team was able to push the web application (It’s live!). The most rewarding part was the user’s reactions when I showed him/her our final product. “Oh my god, I love this! When can I get to use it?” one user said. These moments remind me how meaningful ux design is, and how UX really impacts users.</p>
+		<div class="row">
+			<div class="col-sm-6">
+					<figure class="figure">
+						<img src="work/bd/workshop.jpg" class="figure-img img-fluid rounded">
+						<figcaption class="figure-caption">Axure Workshop</figcaption>
+					</figure>
+					<h3>Design Jam</h3>
+			</div>
+			<div class="col-sm-6">
+				<h3>BD</h3>
+					<figure class="figure">
+						<img src="work/bd/presenting2.jpg" class="figure-img img-fluid rounded">
+						<figcaption class="figure-caption">More Presentations!</figcaption>
+					</figure>
+			</div>
+		</div>
 
-          <p>On the last day, we gave a final presentation to the president of medical management solutions, stakeholders, and leaders/managers from BD.
-          <br>
-          <figure class="figure">
-              <img src="work/bd/4.png" class="figure-img img-fluid rounded">
-              <figcaption class="figure-caption">Final Presentation</figcaption>
-          </figure>
-          <br>
-          </p>
-        </div>
-    </div>
+		<br>
+		<br>
 
-    <br>
+		<a class="btn btn-main mb-4" href="index.html"> ← back to work</a>
+		
+		</div>
+	</div>
+</section>
 
-    <div class="row">
-        <div class="col-sm-12">
-        <h3>02. UXD Project: Redesign Summary Dialog</h3>
-        <h4 style="color:#F07822;">UX Research</h4> 
-        <p>For the UXD Team, I am primarily working on UX Research with a Human Factor Engineer (Shout out to Marina!). Our goal was to improve the structure and readability of a summary page. <b>Since the work is still in progress, I will share it once it is completed.</b></p>
-        </div>
-    </div>
 
-    <br>
-
-    <div class="row">
-      <div class="col-sm-12">
-        <h3>03. Side Project: Designing a Team T-Shirt</h3>
-        <h4 style="color:#F07822;">Visual Design</h4> 
-        <p>One thing I learned during my internship is to be willing to help and constantly ask for more. Throughout the internship, I told my manager that I could assist in additional work if needed. One day, my manager came and asked me if I was interested in designing a T-Shirt for his team. The RSS (Remote Support Service) team had a new release of the software and new t-shirt for the team was needed.</p>
-        <p>I was thrilled at this opportunity and start sketching for ideas.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-3">
-        <h5>Design Ideas/ Inspiration</h5>
-      </div>
-      <div class="col-sm-9">
-        <ul>
-          <li>Cloud: RSS is a cloud based service platform. </li>
-          <li>Team Names: The RSS group have several teams, all teams are named after Marvel characters.</li>
-          <li>Software Product: BD Assist, RSS Dashboard, Aria</li>
-          <li>Hardware Product: BD Pyxis Medstation, BD FACSCanto II, BD Max</li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-sm-3">
-        <h5>Draft</h5>
-      </div>
-      <div class="col-sm-9">
-        <p>After exploring some designs, I decided on isometric design, since it is one of the latest design trends and it would work well with BD’s medical devices. Isometric design is the combination of flat design and 3D design, without converging perspective lines. I really like how the design is simple, yet gives you different perspectives on an object.
-        </p>
-        <figure class="figure">
-            <img src="work/bd/5.png" class="figure-img img-fluid rounded border">
-            <figcaption class="figure-caption">Drafts</figcaption>
-        </figure>
-      </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-3">
-          <h5>Final Design</h5>
-        </div>
-        <div class="col-sm-9">
-            <figure class="figure">
-                <img src="work/bd/6.png" class="figure-img img-fluid rounded border">
-                <figcaption class="figure-caption">Final Design for T-Shirt</figcaption>
-            </figure>
-        </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-    <div class="row">
-      <div class="col-sm-4">
-          <figure class="figure">
-              <img src="work/bd/presenting.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-              <figcaption class="figure-caption">UXD Presentation</figcaption>
-          </figure>
-      </div>
-      <div class="col-sm-4">
-          <figure class="figure">
-              <img src="work/bd/team.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-              <figcaption class="figure-caption">This is my team!</figcaption>
-          </figure>
-      </div>
-      <div class="col-sm-4">
-          <figure class="figure">
-              <img src="work/bd/presenting.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-              <figcaption class="figure-caption">A caption for the above image.</figcaption>
-          </figure>
-      </div>
-    </div>
-
-    <!--Project End-->
-
-    <!--Back Button-->
-    <br>
-    <br>
-
-  <a class="btn btn-outline-danger" href="index.html"> ← back to work</a>
-<!--Back Button-->
-
-</div>
-</body>
-
-<!-- Footer -->
 <br>
-<br>
-<br>
-<footer class="page-footer font-small darken-3" style="background-color:black;">
-        <div class="container animated fadeInUp">
-            <div class="row">
-            <div class="col-md-12 py-5 flex-center">
-                <div class="mb-5 flex-center text-center" style="color:white;">
-                    
-                    <a href="https://www.linkedin.com/in/ealisonchen/" style="color:white;" target="_blank">
-                        <i class="fab fa-linkedin fa-lg white-text mr-3 fa-2x"></i>
-                    </a>
-                    <a href="mailto: enyu.alison.chen@gmail.com" style="color:white;" target="_blank">
-                        <i class="fas fa-envelope fa-lg white-text mr-3 fa-2x"></i>
-                    </a>
-                    <a href="https://instagram.com/eatnzzz" style="color:white;" target="_blank">
-                        <i class="fab fa-instagram fa-lg white-text mr-3 fa-2x"></i>
-                    </a>
-                </div>
-            <div class="footer-copyright text-center py-1" style="color:white;">Design & Coded by 🍎Alison Chen</div>
-            <div class="footer-copyright text-center py-1" style="color:white;">Copyright © 2019</div>
-            </div>
-        </div>
-        </div>
-</footer>
+
+<section class="footer">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-6">
+			  <h5 class="mb-0 footer-text">Designed & Coded by Alison Chen 👩🏻‍💻</h5>
+			</div>
+			<div class="col-lg-6">
+			  <div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
+				<ul class="list-inline mb-0">
+				  <li class="list-inline-item"><a href="mailto: enyu.alison.chen@gmail.com" target="_blank"><i class="ti-email mr-3"></i></a>
+				  </li>
+				  <li class="list-inline-item"><a href="https://www.linkedin.com/in/ealisonchen/" target="_blank"><i class="ti-linkedin mr-3"></i></a>
+				  </li>
+				  <li class="list-inline-item"><a href="https://github.com/enyuchen/" target="_blank"><i class="ti-github mr-3"></i></a></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+</section>
+
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="plugins/animated-text/animated-text.js"></script>
+<script src="plugins/counto/apear.js"></script>
+<script src="plugins/counto/counTo.js"></script>
+
+ <!-- Google Map -->
+<script src="plugins/google-map/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script> 
+<!-- Main Script -->
+<script src="js/script.js"></script>
 
 </html>
