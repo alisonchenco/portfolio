@@ -75,12 +75,13 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: 0.166667px;
   line-height: 1.7em;
@@ -92,7 +93,7 @@ p {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family:'Graphik', sans-serif;
+  /*font-family:'Graphik', sans-serif;*/
   /*'proxima-nova', sans-serif;*/
   /*font-family: "Work Sans", sans-serif;*/
   font-weight: 600;
@@ -100,7 +101,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: 45px;
+  font-size: 50px;
   text-transform: none;
 }
 
@@ -263,7 +264,7 @@ a:hover {
   padding: 0px;
 }
 
-.banner .cd-headline {
+.banner .headline {
   font-size: 56px;
   line-height: 70px;
 }
@@ -285,6 +286,12 @@ a:hover {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 700;
+}
+
+.navbar-nav>.active> a, 
+.navbar-nav>.active> a:focus, 
+.navbar-nav>.active> a:hover {
+  color: #1425ca; /* Anything you want */
 }
 
 ul.dropdown-menu {
