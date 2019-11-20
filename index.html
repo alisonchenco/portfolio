@@ -22,14 +22,38 @@
   <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
   <link rel="stylesheet" href="plugins/animated-text/animated-text.css">
 
+
+<div class="loader-wrapper">
+	<div class="loader">
+    <div class="roller"></div>
+    <div class="roller"></div>
+  </div>
+  
+  <div id="loader2" class="loader">
+    <div class="roller"></div>
+    <div class="roller"></div>
+  </div>
+  
+  <div id="loader3" class="loader">
+    <div class="roller"></div>
+    <div class="roller"></div>
+  </div>
+</div>
+
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/animate.min.css" rel="stylesheet" >
 
   <script>
+	  $(window).on("load", function(){
+		  $(".loader-wrapper").fadeOut("slow");
+	  });
+  </script>
+
+  <script>
 	   $(function() {
     $('.scroll-down').click (function() {
-      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+      $('html, body').animate({scrollTop: $('section.work').offset().top }, 'slow');
       return false;
     });
   });
@@ -77,8 +101,8 @@
 					 <h1 class="cd-headline clip is-full-width mb-4">
 						 Alison Chen
 						is a <span class="cd-words-wrapper text-color">
-							<b class="is-visible">Product Designer. </b>
-							<b>UI/UX Designer.</b>
+							<b class="is-visible highlighter-blue">Product Designer.</b>
+							<b class="highlighter-blue">UI/UX Designer.</b>
 						</span>
 					</h1>
 					<br>
@@ -92,7 +116,7 @@
 					  <br>
 					  <br>
 					  <br>
-					  <a href="#ok" class="scroll-down" address="true"></a>
+					  <a href="#work" class="scroll-down" address="true"></a>
 				
 				</div>
 			</div>
@@ -102,25 +126,25 @@
 <!-- Banner End -->
 
 <!-- Portfolio start -->
-<section class="portfolio ok">
+<section class="portfolio work">
 	<div class="container">
 
 
 
-			<div class="row shuffle-wrapper portfolio-gallery" id="ok">
-				<div class="col-lg-4 col-6 mb-4 shuffle-item">
+			<div class="row shuffle-wrapper portfolio-gallery" id="work">
+				<div class="col-lg-4 col-6 mb-4 shuffle-item" data-aos="fade-right">
 						<h1 style="font-size: 80px; color:#E07239;">01</h1>
 						<h3 class="mb-4" style="color:#E07239;">UX Design Internship @BD</h3>
 						<h4 class="mb-4" style="color:#E07239;">Summer 2019</h4>
 						
 					</div>
-				<div class="col-lg-8 col-6 mb-4 shuffle-item" data-aos="fade-left">
+				<div class="col-lg-8 col-6 mb-4 shuffle-item">
 					<a href="bd.html">
 						<div class="image-overlay position-relative">
 						<img src="img/portfolio/bd.png" alt="portfolio-image" class="img-fluid w-100 d-block border rounded">
 							<div class="overlay" style="background-color: #E07239;">
 								<div class="overlay-text">              
-									<h4 class="mb-0 big" style="color: white">Redesigned troubleshooting tools to help technical engineers troubleshoot efficiently.</h4>
+									<h4 class="mb-0 big" style="color: white">UX Research + Interaction Design</h4>
 									<h5 class="mb-0 text-white small"></h5>              
 								</div>
 							</div> 				
@@ -134,18 +158,18 @@
 			<br>
 
 			<div class="row shuffle-wrapper portfolio-gallery">
-				<div class="col-lg-4 col-6 mb-4 shuffle-item">
+				<div class="col-lg-4 col-6 mb-4 shuffle-item" data-aos="fade-right">
 						<h1 style="font-size: 80px;">02</h1>
 						<h3 class="mb-4">Building the Largest Design Community at UCSD</h3>
 						<h4>Design Co</h4>
 				</div>
-				<div class="col-lg-8 col-6 mb-4 shuffle-item" data-aos="fade-left">
+				<div class="col-lg-8 col-6 mb-4 shuffle-item">
 					<a href="designco.html">
 							<div class="image-overlay position-relative">
 							<img src="img/portfolio/design.png" alt="portfolio-image" class="img-fluid w-100 d-block border rounded">
 								<div class="overlay" style="background-color: black;">
 									<div class="overlay-text">              
-										<h4 class="mb-0 big" style="color: white">Hosting industry workshops to foster growth in students by exposing them to industry opportunities.</h4>
+										<h4 class="mb-0 big" style="color: white">Leadership</h4>
 										<h5 class="mb-0 text-white small"></h5>       
 									</div>
 								</div> 				
@@ -159,19 +183,19 @@
 			<br>
 
 			<div class="row shuffle-wrapper portfolio-gallery">
-					<div class="col-lg-4 col-6 mb-4 shuffle-item">
+					<div class="col-lg-4 col-6 mb-4 shuffle-item" data-aos="fade-right">
 							<h1 style="font-size: 80px; color:#3b5998;">03</h1>
 							<h3 class="mb-4" style="color:#3b5998;">UI/UX Case Study</h3>
 							<h4 class="mb-4" style="color:#3b5998;">Facebook Saved Redesign</h4>
 						</div>
-					<div class="col-lg-8 col-6 mb-4 shuffle-item" data-aos="fade-left">
-						<a href="">
+					<div class="col-lg-8 col-6 mb-4 shuffle-item">
+						<a href="facebook.html">
 								<div class="image-overlay position-relative">
 								<img src="img/portfolio/facebook.png" alt="portfolio-image" class="img-fluid w-100 d-block rounded">
 									<div class="overlay" style="background-color: #3b5998;">
 										<div class="overlay-text">              
-											<h4 class="mb-0 big" style="color: white">Currently under construction 🚧</h4>
-											<h5 class="mb-0 text-white small">Please come back soon!</h5>              
+											<h4 class="mb-0 big" style="color: white">Interaction Design</h4>
+											<h5 class="mb-0 text-white small"></h5>              
 										</div>
 									</div> 				
 								</div>
@@ -183,19 +207,19 @@
 			<br>
 
 			<div class="row shuffle-wrapper portfolio-gallery">
-					<div class="col-lg-4 col-6 mb-4 shuffle-item">
+					<div class="col-lg-4 col-6 mb-4 shuffle-item" data-aos="fade-right">
 							<h1 style="font-size: 80px; color:#F7CF47;">04</h1>
 							<h3 class="mb-4" style="color:#F7CF47;">UI/UX Case Study</h3>
 							<h4 class="mb-4" style="color:#F7CF47;">UCSD Dining App</h4>
 					</div>
-					<div class="col-lg-8 col-6 mb-4 shuffle-item" data-aos="fade-left">
+					<div class="col-lg-8 col-6 mb-4 shuffle-item">
 						<a href="ucsd.html">
 							<div class="image-overlay position-relative">
 							<img src="img/portfolio/ucsd.png" alt="portfolio-image" class="img-fluid w-100 d-block rounded">
 								<div class="overlay" style="background-color: #F7CF47;">
 									<div class="overlay-text">              
-										<h4 class="mb-0 big" style="color: white">UCSD Dining Redesign</h4>
-										<h5 class="mb-0 text-white small">UI/UX Design</h5>              
+										<h4 class="mb-0 big" style="color: white">UI/UX Design</h4>
+										<h5 class="mb-0 text-white small"></h5>              
 									</div>
 								</div> 				
 							</div>
@@ -207,19 +231,19 @@
 			<br>
 
 			<div class="row shuffle-wrapper portfolio-gallery">
-					<div class="col-lg-4 col-6 mb-4 shuffle-item">
+					<div class="col-lg-4 col-6 mb-4 shuffle-item" data-aos="fade-right">
 							<h1 style="font-size: 80px; color:#38d39f;">05</h1>
 							<h3 class="mb-4" style="color:#38d39f;">UI/UX Design</h3>
 							<h4 class="mb-4" style="color:#38d39f;">Design for Parkinson's</h4>
 					</div>	
-					<div class="col-lg-8 col-6 mb-4 shuffle-item" data-aos="fade-left">
+					<div class="col-lg-8 col-6 mb-4 shuffle-item">
 						<a href="parkinsons.html">
 								<div class="image-overlay position-relative" >
 								<img src="img/portfolio/ibm.png" alt="portfolio-image" class="img-fluid w-100 d-block rounded">
 									<div class="overlay" style="background-color: #38d39f;">
 										<div class="overlay-text">              
-											<h4 class="mb-0 big" style="color: white">Design for Parkinson's</h4>
-											<h5 class="mb-0 text-white small">UI/UX Design</h5>              
+											<h4 class="mb-0 big" style="color: white">Design for Accesibility</h4>
+											<h5 class="mb-0 text-white small"></h5>              
 										</div>
 									</div> 				
 								</div>
@@ -233,19 +257,19 @@
 			
 
 			<div class="row shuffle-wrapper portfolio-gallery">
-					<div class="col-lg-4 col-6 mb-4 shuffle-item">
+					<div class="col-lg-4 col-6 mb-4 shuffle-item" data-aos="fade-right">
 							<h1 style="font-size: 80px; color:#138faf;">06</h1>
 							<h3 class="mb-4" style="color:#138faf;">Visual + Brand Design</h3>
 							<h4 class="mb-4" style="color:#138faf;">UCSD TASA</h4>
 					</div>	
 					<div class="col-lg-8 col-6 mb-4 shuffle-item">
 						<a href="tasa.html">
-								<div class="image-overlay position-relative" data-aos="fade-left">
+								<div class="image-overlay position-relative">
 								<img src="img/portfolio/tasa.png" alt="portfolio-image" class="img-fluid w-100 d-block border rounded">
 									<div class="overlay" style="background-color: #138faf;">
 										<div class="overlay-text">              
-											<h4 class="mb-0 big" style="color: white">UCSD TASA</h4>
-											<h5 class="mb-0 text-white small">Visual + Brand Design</h5>              
+											<h4 class="mb-0 big" style="color: white">Brand Design</h4>
+											<h5 class="mb-0 text-white small"></h5>              
 										</div>
 									</div> 				
 								</div>
