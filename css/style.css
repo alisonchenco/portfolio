@@ -90,11 +90,9 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Graphik, sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: 0.15px;
+  font-size: 15px;
   line-height: 1.7em;
   color: #141823;
 }
@@ -102,11 +100,8 @@ body {
 
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  /*font-family: 'Montserrat', sans-serif;*/
-  /*font-family:'Graphik', sans-serif;*/
-  /*'proxima-nova', sans-serif;*/
-  /*font-family: "Work Sans", sans-serif;*/
-  font-weight: 700;
+
+  font-family:'Graphik', sans-serif;
   color: #292828;
 }
 
@@ -131,11 +126,6 @@ h4, .h4 {
   line-height: 30px;
 }
 
-.content h4 {
-  font-family: 'proxima-nova', sans-serif;
-  font-size: 26px;
-}
-
 h5, .h5 {
   font-size: 16px;
   line-height: 26px;
@@ -158,10 +148,7 @@ h6, .h6 {
 }
 
 .project-info {
-  background-color: #F4F4F4;
   border-radius: 5px;
-  border: #e8eefb;
-  padding: 20px;
 }
 
 .btn {
@@ -705,7 +692,6 @@ textarea.form-control {
   background: #1425ca;
 ;
 }
-
 .img:hover{
 color: #424242; 
 -webkit-transition: all .3s ease-in;
@@ -716,7 +702,7 @@ transition: all .3s ease-in;
 opacity: 1;
 transform: scale(1.15);
 -ms-transform: scale(1.15); /* IE 9 */
--webkit-transform: scale(1.15); /* Safari and Chrome */
+-webkit-transform: scale(1.15); /* Safari and Chrome*/
 }
 
 .letter-spacing {
