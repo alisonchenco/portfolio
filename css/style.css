@@ -284,7 +284,7 @@ a:hover {
 }
 
 .main-nav .header-top-socials a {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 1px;
   font-size: 14px;
   padding: 20px 6px;
@@ -292,7 +292,7 @@ a:hover {
 
 .navbar-nav .nav-link {
   padding: 20px 15px !important;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 700;
