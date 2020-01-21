@@ -6,7 +6,15 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap');
 
+/*customized*/
+
+.pill h3, h1 {
+  color: #3E67D6;
+  font-weight: 700;
+}
+
 /*layout*/
+
 
 html {
   overflow-x: hidden;
