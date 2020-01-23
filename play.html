@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Alison Chen</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="img/blue-logo.png" type="image/gif" sizes="15x15">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+  <link rel="stylesheet" href="plugins/counto/animate.css">
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="plugins/animated-text/animated-text.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<script>
+    // Set the Access Token
+    var accessToken = "7f77a2508e25a4f2ec86a283e70d72606e22443748a3fd527765153eff405cc1"
+
+    // Call Dribble v2 API
+    $.ajax({
+        url: 'https://api.dribbble.com/v2/user/shots?access_token='+accessToken,
+        dataType: 'json',
+        type: 'GET',
+        success: function(data) {  
+        if (data.length > 0) { 
+            $.each(data.reverse(), function(i, val) {                
+            $('#dribbbleShots').prepend(
+                '<li class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.hidpi +'"/></li>'
+                )
+            })
+        }
+        else {
+            $('#dribbbleShots').append('<p>Sorry, No shots yet</p>');
+        }
+        }
+    });
+</script>
+
+
+<body>
+  
+<!-- Header Start --> 
+
+<nav class="navbar navbar-expand-lg  main-nav " id="navbar">
+	<div class="container">
+
+	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="ti-align-justify"></span>
+	  </button>
+  
+		  <div class="collapse navbar-collapse" id="navbarsExample09">
+			<ul class="navbar-nav ml-auto">			 
+                <li class="nav-item"><a class="nav-link" href="index.html">Work</a></li>
+                <li class="nav-item active"><a class="nav-link" href="play.html">Play</a></li>
+				<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	
+<!-- Header Close --> 
+
+<br>
+<br>
+
+<!--Resume-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <ul id="dribbbleShots">
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h5 class="mb-0 footer-text">Designed & Coded by Alison Chen 👩🏻‍💻</h5>
+        </div>
+        <div class="col-lg-6">
+          <div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="mailto: enyu.alison.chen@gmail.com" target="_blank"><i class="ti-email mr-3"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/ealisonchen/" target="_blank"><i class="ti-linkedin mr-3"></i></a>
+              </li>
+              <li class="list-inline-item"><a href="https://github.com/enyuchen/" target="_blank"><i class="ti-github mr-3"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/aos/aos.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="plugins/animated-text/animated-text.js"></script>
+<script src="plugins/counto/apear.js"></script>
+<script src="plugins/counto/counTo.js"></script>
+
+ <!-- Google Map -->
+<script src="plugins/google-map/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script> 
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</html>

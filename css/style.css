@@ -374,3 +374,99 @@ a:hover {
     transform: translateY(-5px);
   }
 }
+
+
+/* Dribble shots on website */
+
+#dribbbleShots {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -.5rem;
+  margin-left: -.5rem;
+}
+
+#dribbbleShots li {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  flex-basis: 30.333333%;
+  max-width: 30.333333%;
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
+  overflow: hidden;
+}
+
+#dribbbleShots li:before {
+  position: absolute;
+  content: "";
+  width: 1000px;
+  height: 1000px;
+  background: rgba(33, 43, 185, 0.93);
+  top: 0;
+  left: 0;
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.5s;
+  opacity: 0;
+  transform: translate(-46%, -111%) rotate(60deg);
+}
+
+#dribbbleShots li img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  height: 100%;
+}
+
+#dribbbleShots .title{
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  font-size: 25px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: #fff;
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
+  transform: translateY(30px);
+  opacity: 0;
+  width: 70%;
+  line-height: normal;
+}
+
+#dribbbleShots li:hover{
+  box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.21);
+  transform: scale(1.02);
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
+}
+
+#dribbbleShots li:hover .title{
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+#dribbbleShots li:hover:before{
+  opacity: 1;
+  transform: translate(-35%, -43%) rotate(60deg);
+  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.5s;
+}
