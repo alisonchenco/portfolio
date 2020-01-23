@@ -8,8 +8,13 @@
 
 /*customized*/
 
-.pill h3, h1 {
+.pill h3 {
   color: #3E67D6;
+  font-weight: 700;
+}
+
+.bd h3 {
+  color: #47B756;
   font-weight: 700;
 }
 
@@ -23,6 +28,12 @@ html {
 
 .header {
   background-color:black;
+}
+
+hr {
+
+  margin-top:3em; 
+  margin-bottom: 3em;
 }
 
 .page-title h1 {
