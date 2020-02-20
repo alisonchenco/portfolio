@@ -28,7 +28,13 @@
   font-weight: 700;
 }
 
+
 /*layout*/
+
+.container-small{
+  margin-right: 2rem;
+  margin-left: 8rem;
+}
 
 
 html {
