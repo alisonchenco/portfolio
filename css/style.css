@@ -113,6 +113,49 @@ body {
   padding: 60px 0px;
 }
 
+.footer ul {
+  display: flex;
+  grid-gap: 10px;
+  margin: auto;
+  text-align: right;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+@media (min-width: 500px) {
+  .footer ul {
+    grid-auto-flow: column;
+  }
+}
+
+ .footer a {
+  text-decoration: none;
+  font-size: 1rem; 
+  box-sizing: border-box !important;
+  position: relative  !important;
+  display: inline-block !important;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1rem !important;
+  margin: 0rem 0.5rem !important;
+  border-radius: 4rem;
+  border: solid 2px white !important
+}
+
+.footer a:hover {
+  font-size: 1rem; 
+  box-sizing: border-box !important;
+  position: relative  !important;
+  display: inline-block !important;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1rem !important;
+  margin: 0rem 0.5rem !important;
+  border-radius: 4rem;
+  border: solid 2px #D3D3D3 !important;
+}
+
+
 /*layout*/
 
 
@@ -181,20 +224,6 @@ mark {
   background-color: #FFF97A;
   padding: 3px 5px;
   border-radius: 3px;
-}
-
-.footer-text {
-  color: #1425ca;
-;
-}
-
-.footer-widget a {
-  color: #1425ca;
-  text-transform: capitalize;
-}
-
-.footer-widget a:hover {
-  color: black;
 }
 
 /*Typography*/
@@ -270,44 +299,71 @@ mark {
 
 a {
   color: #1425ca;
-;
   transition: all .25s ease;
 }
 
 a:hover {
   color: #000;
-  text-decoration: none;
+  text-decoration: un;
   outline: none;
 }
 
-.nav-link {
+/*.nav-link {
   color: #000;
 }
 
 .nav-link:hover {
   color: #1425ca;
 ;
-}
+}*/
 /*hover*/
-
+  /*padding: 20px 20px !important;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 4rem;
+  border: solid 2px white;*/
 /*nav*/
-.main-nav .header-top-socials a {
-  letter-spacing: 1px;
-  font-size: 14px;
-  padding: 20px 6px;
-}
+
 
 .navbar-nav .nav-link {
-  padding: 20px 15px !important;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 1rem; 
+  box-sizing: border-box !important;
+  position: relative  !important;
+  display: inline-block !important;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1rem !important;
+  margin: 1.5rem 0.5rem !important;
+  border-radius: 4rem;
+  border: solid 2px white !important;
+}
 
+.navbar-nav .nav-link:hover {
+  font-size: 1rem; 
+  box-sizing: border-box !important;
+  position: relative  !important;
+  display: inline-block !important;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1rem !important;
+  margin: 1.5rem 0.5rem !important;
+  border-radius: 4rem;
+  border: solid 2px #D3D3D3 !important;
 }
 
 .navbar-nav>.active> a, 
 .navbar-nav>.active> a:focus, 
 .navbar-nav>.active> a:hover {
-  color: #1425ca; /* Anything you want */
+  font-size: 1rem; 
+  box-sizing: border-box !important;
+  position: relative  !important;
+  display: inline-block !important;
+  color:#1425ca;
+  font-weight: bold;
+  padding: 0.5rem 1rem !important;
+  margin: 1.5rem 1rem !important;
+  border-radius: 4rem;
+  border: solid 2px #1425ca !important;
 }
 /*nav*/
 
@@ -391,98 +447,256 @@ a:hover {
   }
 }
 
+/*modal*/
 
-/* Dribble shots on website */
-
-#dribbbleShots {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -.5rem;
-  margin-left: -.5rem;
-}
-
-#dribbbleShots li {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex-preferred-size: 0;
-  box-sizing: border-box;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  padding-right: .5rem;
-  padding-left: .5rem;
-  flex-basis: 30.333333%;
-  max-width: 30.333333%;
-  position: relative;
-  height: 300px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
+.modal-open {
   overflow: hidden;
 }
-
-#dribbbleShots li:before {
-  position: absolute;
-  content: "";
-  width: 1000px;
-  height: 1000px;
-  background: rgba(33, 43, 185, 0.93);
-  top: 0;
-  left: 0;
-  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.5s;
-  opacity: 0;
-  transform: translate(-46%, -111%) rotate(60deg);
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-#dribbbleShots li img{
-  position: absolute;
-  width: 100%;
+.modal {
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+/*.modal-section img{
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.modal-section img:hover {
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}*/
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 3rem;
+  pointer-events: none;
+}
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .modal.fade .modal-dialog {
+    transition: none;
+  }
+}
+.modal.show .modal-dialog {
+  transform: none;
+}
+.modal.modal-static .modal-dialog {
+  transform: scale(1.02);
+}
+
+.modal-dialog-scrollable {
+  display: flex;
+  max-height: calc(100% - 1rem);
+}
+.modal-dialog-scrollable .modal-content {
+  max-height: calc(100vh - 1rem);
+  overflow: hidden;
+}
+.modal-dialog-scrollable .modal-header,
+.modal-dialog-scrollable .modal-footer {
+  flex-shrink: 0;
+}
+.modal-dialog-scrollable .modal-body {
+  overflow-y: auto;
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+}
+.modal-dialog-centered::before {
+  display: block;
+  height: calc(100vh - 1rem);
+  content: "";
+}
+.modal-dialog-centered.modal-dialog-scrollable {
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
 }
+.modal-dialog-centered.modal-dialog-scrollable .modal-content {
+  max-height: none;
+}
+.modal-dialog-centered.modal-dialog-scrollable::before {
+  content: none;
+}
 
-#dribbbleShots .title{
-  position: absolute;
-  bottom: 25px;
-  left: 30px;
-  font-size: 25px;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  color: #fff;
-  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
-  transform: translateY(30px);
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0 solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.75rem;
+  outline: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.modal-backdrop.fade {
   opacity: 0;
-  width: 70%;
-  line-height: normal;
+}
+.modal-backdrop.show {
+  opacity: 0.5;
 }
 
-#dribbbleShots li:hover{
-  box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.21);
-  transform: scale(1.02);
-  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 0 solid #dee2e6;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+.modal-header .close {
+  padding: 1rem 1rem;
+  margin: -1rem -1rem -1rem auto;
 }
 
-#dribbbleShots li:hover .title{
-  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.3s;
-  transform: translateY(0px);
-  opacity: 1;
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
 }
 
-#dribbbleShots li:hover:before{
-  opacity: 1;
-  transform: translate(-35%, -43%) rotate(60deg);
-  transition: all cubic-bezier(0.31, 0.48, 0.53, 0.83) 0.5s;
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 4rem 1rem;
 }
+
+.modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 4rem 1rem-0.25rem;
+  border-top: 0 solid #dee2e6;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+.modal-footer > * {
+  margin: 0.25rem;
+}
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+
+  .modal-dialog-scrollable {
+    max-height: calc(100% - 3.5rem);
+  }
+  .modal-dialog-scrollable .modal-content {
+    max-height: calc(100vh - 3.5rem);
+  }
+
+  .modal-dialog-centered {
+    min-height: calc(100% - 3.5rem);
+  }
+  .modal-dialog-centered::before {
+    height: calc(100vh - 3.5rem);
+  }
+
+  .modal-sm {
+    max-width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-lg,
+.modal-xl {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-xl {
+    max-width: 1140px;
+  }
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  transition: 0.3s;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  box-shadow: 0 0px 8px 0 rgba(0,0,0,0.1);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
